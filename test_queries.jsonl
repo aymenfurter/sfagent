@@ -1,0 +1,4 @@
+{"id": 1, "question": "What contacts can you find in salesforce for the company Microsoft?", "ground_truth": "The response should include a list of contacts associated with Microsoft from Salesforce"}
+{"id": 2, "question": "Check the website of Microsoft in salesforce", "ground_truth": "The response should return Microsoft's website information from their Salesforce account record"}
+{"id": 3, "question": "What is the website of Google as per our salesforce?", "ground_truth": "We do not have a website for Google on record"}
+{"id": 4, "question": "What is the website of Google as per bing?", "ground_truth": "The website of Google is [www.google.com](https://www.google.com)"}
