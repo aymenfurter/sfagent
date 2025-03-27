@@ -147,8 +147,9 @@ with gr.Blocks(title="Azure AI - Salesforce Assistant") as demo:
     # Example questions
     gr.Markdown("### Example Questions")
     with gr.Row():
-        q1 = gr.Button("What is the address of Microsoft?")
-        q2 = gr.Button("Find contacts with 'Furter' in their name")
+        q1 = gr.Button("What is the address of Microsoft, as per salesforce?")
+        q2 = gr.Button("Find contacts with 'Furter' in their name (in salesforce)")
+        q3 = gr.Button("What are some recent news about Azure AI Agent Service?")
 
     # Handle clearing chat
     clear_button.click(fn=clear_history, outputs=chatbot)
@@ -160,7 +161,7 @@ with gr.Blocks(title="Azure AI - Salesforce Assistant") as demo:
             return question
 
     # Wire example question buttons
-    for btn in [q1, q2]:
+    for btn in [q1, q2, q3]:
         btn.click(fn=set_example_question, inputs=btn, outputs=input_box) \
            .then(salesforce_chat, inputs=[input_box, chatbot], outputs=[chatbot, input_box]) \
            .then(lambda: "", outputs=input_box)
