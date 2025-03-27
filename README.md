@@ -1,7 +1,6 @@
 # Salesforce Assistant with Azure AI
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
 ![Azure](https://img.shields.io/badge/Azure-Integrated-blue)
 
 This application integrates Salesforce with Azure AI to provide a conversational assistant capable of retrieving and managing Salesforce data. The assistant uses OpenTelemetry for tracing and supports Bing grounding for general queries.
